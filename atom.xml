@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>咕哒子的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://windowsxp002.github.io/"/>
+  <updated>2020-01-06T09:02:02.301Z</updated>
+  <id>https://windowsxp002.github.io/</id>
+  
+  <author>
+    <name>咕哒子</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux常用设置</title>
+    <link href="https://windowsxp002.github.io/2020/01/06/linux%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://windowsxp002.github.io/2020/01/06/linux%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/</id>
+    <published>2020-01-06T09:00:00.000Z</published>
+    <updated>2020-01-06T09:02:02.301Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="linux常用设置"><a href="#linux常用设置" class="headerlink" title="linux常用设置"></a>linux常用设置</h1><p>这篇文章相当于是一个笔记，记录一下我每次安装完Linux(Gnome桌面环境下)必定会做的几件事情，防止自己遗忘，当然这篇文章并不是很全面，以后如果还有还会再修改的。</p><a id="more"></a><h2 id="1、点击图标最小化"><a href="#1、点击图标最小化" class="headerlink" title="1、点击图标最小化"></a>1、点击图标最小化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gsettings <span class="built_in">set</span> org.gnome.shell.extensions.dash-to-dock click-action <span class="string">'minimize'</span></span><br></pre></td></tr></table></figure><h2 id="2、linux-v2ray"><a href="#2、linux-v2ray" class="headerlink" title="2、linux v2ray"></a>2、linux v2ray</h2><pre><code>https://github.com/xbblog95/v2sub.githttps://v2sub.betac1ouds.top/modules/servers/V2raySocks/osubscribe.php?sid=2679&amp;token=acECX4eA8xgg</code></pre><h2 id="3、切换默认Python版本"><a href="#3、切换默认Python版本" class="headerlink" title="3、切换默认Python版本"></a>3、切换默认Python版本</h2><pre><code>sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150</code></pre><h2 id="4、scrcpy"><a href="#4、scrcpy" class="headerlink" title="4、scrcpy"></a>4、scrcpy</h2><pre><code>手机无线投屏工具，也可以USB链接</code></pre><h2 id="5、peek"><a href="#5、peek" class="headerlink" title="5、peek"></a>5、peek</h2><pre><code>GIF录制工具</code></pre><h2 id="6、sudo-nautilus"><a href="#6、sudo-nautilus" class="headerlink" title="6、sudo nautilus"></a>6、sudo nautilus</h2><pre><code>nautilus linux文件管理工具</code></pre><h2 id="7、efibootmgr"><a href="#7、efibootmgr" class="headerlink" title="7、efibootmgr"></a>7、efibootmgr</h2><pre><code>无效，需要禁用Windowsefi启动项否则会重置启动项</code></pre><h2 id="8、双系统时间问题"><a href="#8、双系统时间问题" class="headerlink" title="8、双系统时间问题"></a>8、双系统时间问题</h2><pre><code>sudo hwclock --localtime --systohc</code></pre><h2 id="9、grub-主题"><a href="#9、grub-主题" class="headerlink" title="9、grub 主题"></a>9、grub 主题</h2><p><a href="https://blog.csdn.net/Sacredness/article/details/86354020" target="_blank" rel="noopener">grub 主题下载</a></p><h3 id="1）下载grub主题"><a href="#1）下载grub主题" class="headerlink" title="1）下载grub主题"></a>1）下载grub主题</h3><p>去这里   <a href="https://www.gnome-look.org/browse/cat/109/" target="_blank" rel="noopener">主题下载</a>下载自己喜欢的grub主题，下载下来后是一个压缩包。解压下载下来的压缩包，假设解压出来的目录名字叫A，A中包含了所有的文件。</p><h3 id="2）将主题文件放到指定目录"><a href="#2）将主题文件放到指定目录" class="headerlink" title="2）将主题文件放到指定目录"></a>2）将主题文件放到指定目录</h3><p>在<code>/boot/grub</code>目录中新建一个目录，名字叫<code>themes</code><br>将目录A拷贝到新建的目录。<br>打开目录A，里边有一个文件，文件名叫<code>theme.txt</code>，记下这个文件的路径，后边有用。</p><h3 id="3-修改grub的主题设置"><a href="#3-修改grub的主题设置" class="headerlink" title="3)修改grub的主题设置"></a>3)修改grub的主题设置</h3><p>修改文件<code>/etc/grub.d/00_header</code>,在<code># along with GRUB. If not, see &lt;http://www.gnu.org/licenses/&gt;</code>.这行注释下边加上一句话，这句话是：GRUB_THEME=theme文件的路径注意这句话不能加在最后边，否则就不管用了,执行命令：<code>update-grub</code>完成</p><h2 id="10、安装Numix图标"><a href="#10、安装Numix图标" class="headerlink" title="10、安装Numix图标"></a>10、安装Numix图标</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   sudo add-apt-repository ppa:numix/ppa</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install numix-gtk-theme numix-icon-theme-circle</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:papirus/papirus</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install papirus-icon-theme</span><br></pre></td></tr></table></figure><h2 id="11-、vacode终端字体间距过大"><a href="#11-、vacode终端字体间距过大" class="headerlink" title="11 、vacode终端字体间距过大"></a>11 、vacode终端字体间距过大</h2><p>去文件-首选项-设置里修改<code>terminal.integrated.fontFamily</code></p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/06/linux%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE/2020-01-05_21-00.png" alt="vscode终端" title>                </div>                <div class="image-caption">vscode终端</div>            </figure><h2 id="12、安装unrar"><a href="#12、安装unrar" class="headerlink" title="12、安装unrar"></a>12、安装unrar</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install rar unrar</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;linux常用设置&quot;&gt;&lt;a href=&quot;#linux常用设置&quot; class=&quot;headerlink&quot; title=&quot;linux常用设置&quot;&gt;&lt;/a&gt;linux常用设置&lt;/h1&gt;&lt;p&gt;这篇文章相当于是一个笔记，记录一下我每次安装完Linux(Gnome桌面环境下)必定会做的几件事情，防止自己遗忘，当然这篇文章并不是很全面，以后如果还有还会再修改的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://windowsxp002.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+      <category term="linux" scheme="https://windowsxp002.github.io/tags/linux/"/>
+    
+      <category term="笔记" scheme="https://windowsxp002.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo使用技巧</title>
+    <link href="https://windowsxp002.github.io/2020/01/05/Hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://windowsxp002.github.io/2020/01/05/Hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</id>
+    <published>2020-01-05T05:51:59.000Z</published>
+    <updated>2020-01-06T09:08:37.636Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo使用技巧"><a href="#Hexo使用技巧" class="headerlink" title="Hexo使用技巧"></a>Hexo使用技巧</h1><p>在搭建GIthub图床的过程中，我遇到了图片的问题，其实在使用Hexo的过程中我还遇到了大大小小的不同的问题，这篇文章统统的记录一下方便以后再遇到类似的问题的时候能够更方便的解决。</p><a id="more"></a><h2 id="摘要问题"><a href="#摘要问题" class="headerlink" title="摘要问题"></a>摘要问题</h2><p>使用<code>&lt;!--more--&gt;</code>标签即可设置摘要，将该标签放置在摘要和正文之间，在Hexo预览的时候就能够显示摘要内容</p><h2 id="图片问题"><a href="#图片问题" class="headerlink" title="图片问题"></a>图片问题</h2><p>前一篇文章中提到了使用图床来事文章显示图片的方法，但其实这种方法是过于麻烦的，首先你需要获得 图片的链接，然后将该图片插入等你写的MarkDown文章中，好处在于你全部的图片都是存放在GIthub一个项目中的，坏处就是所有文章图片都在一起，没办法管理。Hexo提供了MarkDown文章插入图片的方法。</p><h3 id="插入图片准备工作"><a href="#插入图片准备工作" class="headerlink" title="插入图片准备工作"></a>插入图片准备工作</h3><p>执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br><span class="line">cnpm install hexo-asset-image --save//如果你安装了cnpm的话</span><br></pre></td></tr></table></figure><p>然后在<code>_config.yml</code>文件中把<code>post_asset_folder: true</code>设置为True此时如果执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n 新文章名称</span><br></pre></td></tr></table></figure><p>就会看到除了创建了一片新文章之外，还有一个和新文章名称一致的文件夹，这个文件夹就能够放置一些和该篇文章相关的图片。</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/05/Hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/2020-01-05_17-21.png" alt="生成的md文件和文件夹" title>                </div>                <div class="image-caption">生成的md文件和文件夹</div>            </figure><h3 id="MarkDown插入图片"><a href="#MarkDown插入图片" class="headerlink" title="MarkDown插入图片"></a>MarkDown插入图片</h3><p>插入图片的语句就是MarkDown标准的插入图片的语句</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片描述](文章文件夹&#x2F;要插入的图片名称.png)</span><br></pre></td></tr></table></figure><h2 id="标签及分类问题"><a href="#标签及分类问题" class="headerlink" title="标签及分类问题"></a>标签及分类问题</h2><p>标签和分类在博客中显示的效果大概如图所示</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/05/Hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/2020-01-05_17-24.png" alt="标签效果" title>                </div>                <div class="image-caption">标签效果</div>            </figure><p>开启标签和分类功能也很简单，bash中执行</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure><p>即可以看见在source文件夹下生成了/tags、/categories文件夹<br>然后修改<code>scaffolds/post.md</code>文件，设置每次创建的博客模板</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h3 id="标签用法"><a href="#标签用法" class="headerlink" title="标签用法"></a>标签用法</h3><p>多标签<code>tags: [标签1,标签2,标签3......]</code></p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/05/Hexo%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/2020-01-05_18-32.png" alt="效果" title>                </div>                <div class="image-caption">效果</div>            </figure><h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><h4 id="新建草稿"><a href="#新建草稿" class="headerlink" title="新建草稿"></a>新建草稿</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new draft  文章名字</span><br></pre></td></tr></table></figure><p>执行完命令之后你会在<code>source/_drafts</code>找到你的草稿文章，Hexo 另外提供<code>draft</code>机制，它的原理是新文章将建立在<code>source/_drafts</code> 目录下，因此 <code>hexo generate</code> 并不会将其编译到 <code>public</code>目录下，所以<code>hexo deploy</code>也不会将其部署到 GitHub。</p><h4 id="预览草稿"><a href="#预览草稿" class="headerlink" title="预览草稿"></a>预览草稿</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo S --draft</span><br></pre></td></tr></table></figure><p>和<code>hexo s</code>一样访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>预览</p><h4 id="将草稿发布为正式文章"><a href="#将草稿发布为正式文章" class="headerlink" title="将草稿发布为正式文章"></a>将草稿发布为正式文章</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo P &lt;filename&gt;</span><br></pre></td></tr></table></figure><p>其中<code>filename</code>为不包含 <code>md</code> 后缀的文章名称。它的原理只是将文章从 <code>source/_drafts</code>移动到 <code>source/_posts</code>而已。之后的<code>hexo generate</code> 与 <code>hexo deploy</code> 的用法就完全一样了。若日后想将正式文章转为为草稿，只需手动将文章从 <code>source/_posts</code> 目录移动到<code>source/_drafts</code> 目录即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Hexo使用技巧&quot;&gt;&lt;a href=&quot;#Hexo使用技巧&quot; class=&quot;headerlink&quot; title=&quot;Hexo使用技巧&quot;&gt;&lt;/a&gt;Hexo使用技巧&lt;/h1&gt;&lt;p&gt;在搭建GIthub图床的过程中，我遇到了图片的问题，其实在使用Hexo的过程中我还遇到了大大小小的不同的问题，这篇文章统统的记录一下方便以后再遇到类似的问题的时候能够更方便的解决。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://windowsxp002.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+      <category term="Hexo" scheme="https://windowsxp002.github.io/tags/Hexo/"/>
+    
+      <category term="博客" scheme="https://windowsxp002.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PicGo+Github搭建图床</title>
+    <link href="https://windowsxp002.github.io/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"/>
+    <id>https://windowsxp002.github.io/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</id>
+    <published>2020-01-04T05:20:55.000Z</published>
+    <updated>2020-01-05T10:30:29.139Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用Github搭建图床"><a href="#使用Github搭建图床" class="headerlink" title="使用Github搭建图床"></a>使用Github搭建图床</h1><p>使用Github+PicGo方便快捷地搭建属于自己的图床。搭建好博客后总是想写些什么，但是一看自己以前写的东西，总觉得缺点什么，没错就是图片，在我的第一篇博客中，自己虽然每个过程都有截图，但是由于种种原因，自己并没有在MarkDown中添加任何图片这样文章就显得很枯燥。</p><a id="more"></a><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>搭建好博客后总是想写些什么，但是一看自己以前写的东西，总觉得缺点什么，没错就是图片，在我的第一篇博客中，自己虽然每个过程都有截图，但是由于种种原因，自己并没有在MarkDown中添加任何图片，这样文章就显得很枯燥，博客文章显得干干巴巴，因此在MarkDown中添加图片就成了一件不得不做的事</p><h2 id="建一个GIthub仓库"><a href="#建一个GIthub仓库" class="headerlink" title="建一个GIthub仓库"></a>建一个GIthub仓库</h2><p>随便建立一个空的Git仓库</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/创建一个新仓库.png" alt="建立一个空仓库" title>                </div>                <div class="image-caption">建立一个空仓库</div>            </figure><h2 id="获取仓库的token"><a href="#获取仓库的token" class="headerlink" title="获取仓库的token"></a>获取仓库的token</h2><p>在Github的Developer setting界面生一个token，注意该Token只会显示一次，下次一旦刷新就会不见，所以务必保存好这个Token。</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/生成token.png" alt="获得Token" title>                </div>                <div class="image-caption">获得Token</div>            </figure><h2 id="设置PicGo"><a href="#设置PicGo" class="headerlink" title="设置PicGo"></a>设置PicGo</h2><p>在PicGo中的Github图床中设置好相应的参数。</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/PicGo设置.png" alt="设置PicGo" title>                </div>                <div class="image-caption">设置PicGo</div>            </figure><h2 id="测试图片是否上传"><a href="#测试图片是否上传" class="headerlink" title="测试图片是否上传"></a>测试图片是否上传</h2><p>上传几张图片测试是否上传成功。</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/上传成功.png" alt="测试" title>                </div>                <div class="image-caption">测试</div>            </figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用Github搭建图床&quot;&gt;&lt;a href=&quot;#使用Github搭建图床&quot; class=&quot;headerlink&quot; title=&quot;使用Github搭建图床&quot;&gt;&lt;/a&gt;使用Github搭建图床&lt;/h1&gt;&lt;p&gt;使用Github+PicGo方便快捷地搭建属于自己的图床。搭建好博客后总是想写些什么，但是一看自己以前写的东西，总觉得缺点什么，没错就是图片，在我的第一篇博客中，自己虽然每个过程都有截图，但是由于种种原因，自己并没有在MarkDown中添加任何图片这样文章就显得很枯燥。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://windowsxp002.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+      <category term="Hexo" scheme="https://windowsxp002.github.io/tags/Hexo/"/>
+    
+      <category term="github" scheme="https://windowsxp002.github.io/tags/github/"/>
+    
+      <category term="图床" scheme="https://windowsxp002.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+Github搭建博客</title>
+    <link href="https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-01-03T05:20:55.000Z</published>
+    <updated>2020-01-05T05:23:58.406Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-Github搭建博客"><a href="#Hexo-Github搭建博客" class="headerlink" title="Hexo+Github搭建博客"></a>Hexo+Github搭建博客</h1><p>使用Hexo+Github快速搭建个人博客</p><a id="more"></a><h2 id="1、准备工作"><a href="#1、准备工作" class="headerlink" title="1、准备工作"></a>1、准备工作</h2><ul><li>安装node.js<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br></pre></td></tr></table></figure></li><li>安装npm<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure></li></ul><ul><li>查看版本信息<code>npm -v</code> &amp;&amp;<code>nodejs -v</code>;</li><li>升级npm<code>sudo npm -g npm</code>;</li><li>再次确认版本信息<code>npm -v</code> &amp;&amp;<code>nodejs -v</code>，此时你可能会遇到显示升级了，但是查询版本信息的时候还是原来的版本的情况，不要慌，重新注销登入下就行了。</li></ul><ul><li><p>可选步骤<br>由于npm源在国内访问比较比较忙，这样下载的时候就会很忙甚至出错，所以最好将npm的源换成国内的</p><ul><li><p>方式一：安装cnpm<br>   cnpm是阿里定制的npm 命令行工具，安装命令</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li><li><p>方式二：设置npm镜像源<br>如果你不想使用cnpm则使用</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>  再输入:把npm源换成国内的。</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure></li><li><p>设置系统代理</p></li></ul></li></ul><ul><li>github账号<br>创建一个<code>username.github.io</code>的项目，注意username一定要是你github账户的名称，否则不行，这点很重要。</li></ul><h2 id="安装Hexo博客框架"><a href="#安装Hexo博客框架" class="headerlink" title="安装Hexo博客框架"></a>安装Hexo博客框架</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cnpm install -g hexo</span><br></pre></td></tr></table></figure><h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><p>使用命令<code>Hexo init</code> 注意必须是空文件夹(不能有文件或者隐藏文件),期间会有警告,不用理会</p><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>使用命令<code>hexo s</code>启动Hexo<br>访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>可以看见里面有一篇文章,并且有相关的教程</p><h2 id="安装部署到github插件"><a href="#安装部署到github插件" class="headerlink" title="安装部署到github插件"></a>安装部署到github插件</h2><p>安装Github快速部署插件可以很方便的将你的Hexo博客部署到你的Github上面。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2 id="修改个人信息"><a href="#修改个人信息" class="headerlink" title="修改个人信息"></a>修改个人信息</h2><p>注意有多个_config.yml文件，Hexo有_config.yml，有一些主题还有_config.yml文件实在不同的文件夹下面的，首先修改Hexo目录下的_config.yml，把它里面的信息全部改成你自己的信息</p><pre><code>title: 标题subtitle: 副标题description: 描写keywords: &apos;关键字&apos;author:  作者language: zh-CN语言timezone: 时区(可不设置)# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:type: gitrepo:改成你的git项目链接branch:master  ,也可以不指定</code></pre><h2 id="进行测试"><a href="#进行测试" class="headerlink" title="进行测试"></a>进行测试</h2><p>shell中分别执行这些命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p> 此时如果正确无误的话可以再访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>查看修改过后的信息有没有错误。</p><h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><blockquote><p><a href="https://www.zhihu.com/question/24422335/answers/updated" target="_blank" rel="noopener">主题推荐1</a><br><a href="https://github.com/yscoder/hexo-theme-indigo/wiki" target="_blank" rel="noopener">安装教程</a></p></blockquote><blockquote><p><a href="https://blog.csdn.net/zgd826237710/article/details/99671027" target="_blank" rel="noopener">主题推荐2</a>   </p></blockquote><blockquote><p><a href="https://www.hexothe.me/" target="_blank" rel="noopener">Hexo主题排行榜</a>    </p></blockquote><p> 我这里用的是indigo这个主题,主题更换起来十分的方便,你可以在Hexo文件夹下的/Theme文件夹下使用多个主题,这样一旦你觉得那个主题看腻了,就能够很方便的更换（<em>在</em>config.yml配置文件下修改主题_）。更换主题后有一些主题设置需要修改，查看主题的配置文档就行了，很详细。</p><h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p> Hexo的文章全部采用MarkDown格式,如何使用markdown写博客参考<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">MarkDown语法教程</a>，比较简单，不懂的话就在这个网站看一看，相当于是一本字典，不懂就翻一翻。写好的文章放在<code>source/_posts</code>文件夹下面就可以了</p><h2 id="最后确认"><a href="#最后确认" class="headerlink" title="最后确认"></a>最后确认</h2><p> 当你觉得差不多的时候后，进行确认，shell中分别执行这些命令访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>查看</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><h2 id="部署大功告成"><a href="#部署大功告成" class="headerlink" title="部署大功告成"></a>部署大功告成</h2><p> 执行<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><br> 按照要求输入github账号密码就能够部署成功了！！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Hexo-Github搭建博客&quot;&gt;&lt;a href=&quot;#Hexo-Github搭建博客&quot; class=&quot;headerlink&quot; title=&quot;Hexo+Github搭建博客&quot;&gt;&lt;/a&gt;Hexo+Github搭建博客&lt;/h1&gt;&lt;p&gt;使用Hexo+Github快速搭建个人博客&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂项" scheme="https://windowsxp002.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+      <category term="Hexo" scheme="https://windowsxp002.github.io/tags/Hexo/"/>
+    
+      <category term="linux" scheme="https://windowsxp002.github.io/tags/linux/"/>
+    
+      <category term="github" scheme="https://windowsxp002.github.io/tags/github/"/>
+    
+  </entry>
+  
+</feed>

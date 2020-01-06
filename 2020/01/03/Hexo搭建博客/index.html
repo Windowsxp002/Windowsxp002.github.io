@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Hexo+Github搭建博客 | 咕哒子的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Hexo,linux,github">
+    <meta name="description" content="Hexo+Github搭建博客使用Hexo+Github快速搭建个人博客">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+Github搭建博客">
+<meta property="og:url" content="https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="咕哒子的博客">
+<meta property="og:description" content="Hexo+Github搭建博客使用Hexo+Github快速搭建个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-03T05:20:55.000Z">
+<meta property="article:modified_time" content="2020-01-05T05:23:58.406Z">
+<meta property="article:author" content="咕哒子">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="github">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="咕哒子的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/%E5%A4%B4%E5%83%8F.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">咕哒子</h5>
+          <a href="mailto:xiaopeng1679@qq.com" title="xiaopeng1679@qq.com" class="mail">xiaopeng1679@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Windowsxp002" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo+Github搭建博客</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo+Github搭建博客</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-01-03T05:20:55.000Z" itemprop="datePublished" class="page-time">
+  2020-01-03
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Hexo-Github搭建博客"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hexo+Github搭建博客</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、准备工作"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1、准备工作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装Hexo博客框架"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装Hexo博客框架</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#初始化Hexo"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">初始化Hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#测试"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">测试</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装部署到github插件"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">安装部署到github插件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修改个人信息"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">修改个人信息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进行测试"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">进行测试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更换主题"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">更换主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写文章"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">写文章</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最后确认"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">最后确认</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部署大功告成"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">部署大功告成</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Hexo搭建博客"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Hexo+Github搭建博客</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-01-03 13:20:55" datetime="2020-01-03T05:20:55.000Z"  itemprop="datePublished">2020-01-03</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></li></ul>
+
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Hexo-Github搭建博客"><a href="#Hexo-Github搭建博客" class="headerlink" title="Hexo+Github搭建博客"></a>Hexo+Github搭建博客</h1><p>使用Hexo+Github快速搭建个人博客</p>
+<a id="more"></a>
+
+
+<h2 id="1、准备工作"><a href="#1、准备工作" class="headerlink" title="1、准备工作"></a>1、准备工作</h2><ul>
+<li>安装node.js<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br></pre></td></tr></table></figure></li>
+<li>安装npm<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>查看版本信息<code>npm -v</code> &amp;&amp;<code>nodejs -v</code>;</li>
+<li>升级npm<code>sudo npm -g npm</code>;</li>
+<li>再次确认版本信息<code>npm -v</code> &amp;&amp;<code>nodejs -v</code>，此时你可能会遇到显示升级了，但是查询版本信息的时候还是原来的版本的情况，不要慌，重新注销登入下就行了。</li>
+</ul>
+<ul>
+<li><p>可选步骤<br>由于npm源在国内访问比较比较忙，这样下载的时候就会很忙甚至出错，所以最好将npm的源换成国内的</p>
+<ul>
+<li><p>方式一：安装cnpm<br>   cnpm是阿里定制的npm 命令行工具，安装命令</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>方式二：设置npm镜像源<br>如果你不想使用cnpm则使用</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>  再输入:把npm源换成国内的。</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config list</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置系统代理</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>github账号<br>创建一个<code>username.github.io</code>的项目，注意username一定要是你github账户的名称，否则不行，这点很重要。</li>
+</ul>
+<h2 id="安装Hexo博客框架"><a href="#安装Hexo博客框架" class="headerlink" title="安装Hexo博客框架"></a>安装Hexo博客框架</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cnpm install -g hexo</span><br></pre></td></tr></table></figure>
+<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><p>使用命令<code>Hexo init</code> 注意必须是空文件夹(不能有文件或者隐藏文件),期间会有警告,不用理会</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>使用命令<code>hexo s</code>启动Hexo<br>访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>可以看见里面有一篇文章,并且有相关的教程</p>
+<h2 id="安装部署到github插件"><a href="#安装部署到github插件" class="headerlink" title="安装部署到github插件"></a>安装部署到github插件</h2><p>安装Github快速部署插件可以很方便的将你的Hexo博客部署到你的Github上面。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="修改个人信息"><a href="#修改个人信息" class="headerlink" title="修改个人信息"></a>修改个人信息</h2><p>注意有多个_config.yml文件，Hexo有_config.yml，有一些主题还有_config.yml文件实在不同的文件夹下面的，首先修改Hexo目录下的_config.yml，把它里面的信息全部改成你自己的信息</p>
+<pre><code>title: 标题
+subtitle: 副标题
+description: 描写
+keywords: &apos;关键字&apos;
+author:  作者
+language: zh-CN语言
+timezone: 时区(可不设置)
+
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+type: git
+repo:改成你的git项目链接
+branch:master  ,也可以不指定</code></pre><h2 id="进行测试"><a href="#进行测试" class="headerlink" title="进行测试"></a>进行测试</h2><p>shell中分别执行这些命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p> 此时如果正确无误的话可以再访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>查看修改过后的信息有没有错误。</p>
+<h2 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h2><blockquote>
+<p><a href="https://www.zhihu.com/question/24422335/answers/updated" target="_blank" rel="noopener">主题推荐1</a><br><a href="https://github.com/yscoder/hexo-theme-indigo/wiki" target="_blank" rel="noopener">安装教程</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://blog.csdn.net/zgd826237710/article/details/99671027" target="_blank" rel="noopener">主题推荐2</a>   </p>
+</blockquote>
+<blockquote>
+<p><a href="https://www.hexothe.me/" target="_blank" rel="noopener">Hexo主题排行榜</a>    </p>
+</blockquote>
+<p> 我这里用的是indigo这个主题,主题更换起来十分的方便,你可以在Hexo文件夹下的/Theme文件夹下使用多个主题,这样一旦你觉得那个主题看腻了,就能够很方便的更换（<em>在</em>config.yml配置文件下修改主题_）。更换主题后有一些主题设置需要修改，查看主题的配置文档就行了，很详细。</p>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p> Hexo的文章全部采用MarkDown格式,如何使用markdown写博客参考<a href="https://www.mdeditor.com/" target="_blank" rel="noopener">MarkDown语法教程</a>，比较简单，不懂的话就在这个网站看一看，相当于是一本字典，不懂就翻一翻。写好的文章放在<code>source/_posts</code>文件夹下面就可以了</p>
+<h2 id="最后确认"><a href="#最后确认" class="headerlink" title="最后确认"></a>最后确认</h2><p> 当你觉得差不多的时候后，进行确认，shell中分别执行这些命令访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>查看</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="部署大功告成"><a href="#部署大功告成" class="headerlink" title="部署大功告成"></a>部署大功告成</h2><p> 执行<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><br> 按照要求输入github账号密码就能够部署成功了！！</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-01-05T05:23:58.406Z" itemprop="dateUpdated">2020-01-05 13:23:58</time>
+</span><br>
+
+
+        
+        哈！你能记得你吃过多少块面包吗？
+        
+    </div>
+    
+    <footer>
+        <a href="https://windowsxp002.github.io">
+            <img src="/img/%E5%A4%B4%E5%83%8F.jpg" alt="咕哒子">
+            咕哒子
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=《Hexo+Github搭建博客》 — 咕哒子的博客&pic=https://windowsxp002.github.io/img/头像.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=《Hexo+Github搭建博客》 — 咕哒子的博客&source=Hexo+Github搭建博客使用Hexo+Github快速搭建个人博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo+Github搭建博客》 — 咕哒子的博客&url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&via=https://windowsxp002.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/01/04/%E4%BD%BF%E7%94%A8Github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">PicGo+Github搭建图床</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>咕哒子 &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=《Hexo+Github搭建博客》 — 咕哒子的博客&pic=https://windowsxp002.github.io/img/头像.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&title=《Hexo+Github搭建博客》 — 咕哒子的博客&source=Hexo+Github搭建博客使用Hexo+Github快速搭建个人博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo+Github搭建博客》 — 咕哒子的博客&url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/&via=https://windowsxp002.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://windowsxp002.github.io/2020/01/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuklEQVR42u3ay24cMQwEQP//T2+AnHLIrLtJaZ0ApZPhx45KhxHd5NdXvF6/V/ubrz/W0+fk38n3UC88PDy80daf1vuNPj0y/+nTE58Oq/0EPDw8vHu8zSs+vwCSl3t+uNEFhoeHh/ejvPavnl7is03j4eHh/b+8pFx+X/gmR9b+FA8PD+/zvHwr+XbfH0dbgl/PWvDw8PBi3qyt9bNfX+zv4eHh4S266vklkY8abArrerd4eHh4F3j7Evl9ubwv0Nthr+g/Bjw8PLw1ry1kN2MEsxK5bcV9k1Xj4eHhLXizwjd5fedDV/nx1aNdeHh4eBd4s5GpsyVyy9sMhOHh4eHd47UxxCzMPRuI1C0xPDw8vAUvCWTba+NUu+vAPvHw8PAu8/KAdRPvtp+f7+2b0QE8PDy8o7zZpvMrJC+18+AjipXx8PDwjvLaK6ENZ/MiOKdGja7ZjYeHh4cXB7jvC9+2iZXHu+0RzMpxPDw8vLO8zSjVbCSrbW6tSnA8PDy8C7yzYwGzEau2cG9jETw8PLzP82av5lk+sG931RcDHh4e3oKXjDe94jWLNtpW3PCI8fDw8Ba8zVBUPhCQF+KbaPhxdAAPDw/vI7z9hjZHk1883+wQDw8P7wIvD0nbOr3dSvKs/JrBw8PDu83bI/NQ9VRLLA9Q8PDw8M7y2ib9LG5om1X7kS88PDy8z/DyOLVt/+dR7GZwoYgh8PDw8Ba8/PFtY6yNdGdDV0V7DA8PD+8Q71WuTag6G7pqy308PDy827zZi3sWGWyC4LygHyLx8PDwSl5+Gewj2jZQaC+AqLOHh4eHd4iXBwQbQDtQNSuR/3Ix4OHh4f0Qb9a4ygvr9hCL1hceHh7eP8BLttIW2VcOFA8PD+8aLw8jbkQPedLcHhMeHh7eDd6sAZa8rNvoIW+bDRl4eHh4W94vEoCmS326JmsAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
