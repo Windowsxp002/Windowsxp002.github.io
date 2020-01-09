@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://windowsxp002.github.io/"/>
-  <updated>2020-01-09T09:29:31.303Z</updated>
+  <updated>2020-01-09T09:33:26.088Z</updated>
   <id>https://windowsxp002.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://windowsxp002.github.io/2020/01/09/Github%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/"/>
     <id>https://windowsxp002.github.io/2020/01/09/Github%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/</id>
     <published>2020-01-09T09:28:31.000Z</published>
-    <updated>2020-01-09T09:29:31.303Z</updated>
+    <updated>2020-01-09T09:33:26.088Z</updated>
     
-    <content type="html"><![CDATA[<p>记录一下自己经常使用的GItHub搜索技巧，以后还会更新</p><a id="more"></a><h2 id="在名字里面搜索"><a href="#在名字里面搜索" class="headerlink" title="在名字里面搜索"></a>在名字里面搜索</h2><p>顾名思义就是准确的搜索名字中包含相关内容的项目：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">in:name </span><br><span class="line">&#96;&#96;&#96;   </span><br><span class="line">## 在描述里面搜索</span><br><span class="line">搜索在在&#96;deacription&#96;中出现的内容：</span><br></pre></td></tr></table></figure><p>in:deacription</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## stars限制</span><br><span class="line">过滤掉一些Starts少的项目：</span><br></pre></td></tr></table></figure><p>stras:&gt;||&lt;||=</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## 在readme里搜索</span><br><span class="line">搜索出现在Readme文档中的项目</span><br></pre></td></tr></table></figure><p>in:readme</p><pre><code>暂时想到这些，以后如果有再加吧！！</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>记录一下自己经常使用的GItHub搜索技巧，以后还会更新</p><a id="more"></a><h2 id="在名字里面搜索"><a href="#在名字里面搜索" class="headerlink" title="在名字里面搜索"></a>在名字里面搜索</h2><p>顾名思义就是准确的搜索名字中包含相关内容的项目：</p><pre><code>in:name </code></pre><h2 id="在描述里面搜索"><a href="#在描述里面搜索" class="headerlink" title="在描述里面搜索"></a>在描述里面搜索</h2><p>搜索在在<code>deacription</code>中出现的内容：</p><pre><code>in:deacription</code></pre><h2 id="stars限制"><a href="#stars限制" class="headerlink" title="stars限制"></a>stars限制</h2><p>过滤掉一些Starts少的项目：   </p><pre><code>stras:&gt;||&lt;||=</code></pre><h2 id="在readme里搜索"><a href="#在readme里搜索" class="headerlink" title="在readme里搜索"></a>在readme里搜索</h2><p>搜索出现在Readme文档中的项目</p><pre><code>in:readme</code></pre><p>暂时想到这些，以后如果有再加吧！！</p>]]></content>
     
     <summary type="html">
     
