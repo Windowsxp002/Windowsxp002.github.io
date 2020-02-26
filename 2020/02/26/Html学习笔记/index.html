@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Html学习笔记 | 咕哒子的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="学习笔记,HTML">
+    <meta name="description" content="HTML学习笔记概念 HTML hyper text markup language 超文本标记语言 超文本 超文本使用链接的方式，将不同的文字信息连接在一起   标记语言 不是编程语言      快速入门 语法  1、html文档.html或者htm 1234567891011&lt;html&gt;	&lt;head&gt;        &lt;title&gt;        	Title">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Html学习笔记">
+<meta property="og:url" content="https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="咕哒子的博客">
+<meta property="og:description" content="HTML学习笔记概念 HTML hyper text markup language 超文本标记语言 超文本 超文本使用链接的方式，将不同的文字信息连接在一起   标记语言 不是编程语言      快速入门 语法  1、html文档.html或者htm 1234567891011&lt;html&gt;	&lt;head&gt;        &lt;title&gt;        	Title">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-26T08:04:23.000Z">
+<meta property="article:modified_time" content="2020-02-26T10:54:07.884Z">
+<meta property="article:author" content="咕哒子">
+<meta property="article:tag" content="学习笔记">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="咕哒子的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/%E5%A4%B4%E5%83%8F.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">咕哒子</h5>
+          <a href="mailto:xiaopeng1679@qq.com" title="xiaopeng1679@qq.com" class="mail">xiaopeng1679@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Windowsxp002" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Html学习笔记</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Html学习笔记</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-02-26T08:04:23.000Z" itemprop="datePublished" class="page-time">
+  2020-02-26
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTML学习笔记"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTML学习笔记</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概念"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">概念</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#快速入门"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">快速入门</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#标签学习"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">标签学习</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Html学习笔记"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Html学习笔记</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-02-26 16:04:23" datetime="2020-02-26T08:04:23.000Z"  itemprop="datePublished">2020-02-26</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="HTML学习笔记"><a href="#HTML学习笔记" class="headerlink" title="HTML学习笔记"></a>HTML学习笔记</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul>
+<li>HTML hyper text markup language 超文本标记语言<ul>
+<li>超文本<ul>
+<li>超文本使用链接的方式，将不同的文字信息连接在一起</li>
+</ul>
+</li>
+<li>标记语言<ul>
+<li>不是编程语言</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><ul>
+<li><p>语法</p>
+<ul>
+<li><p>1、html文档<code>.html</code>或者<code>htm</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span></span><br><span class="line">        	Title</span><br><span class="line">        <span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bady</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"red"</span>&gt;</span> HELLO WORLD!<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bady</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2 标签分类</p>
+<ul>
+<li>围堵标签:有开始标签和结束标签</li>
+<li>自闭合标签: 开始标签和结束标签在一起</li>
+</ul>
+</li>
+<li><p>3 标签可以嵌套</p>
+</li>
+<li><p>4 可以在开始标签中定义属性,属性由键值对构成,值需要用引号包括起来(单引号和双引号都可以)</p>
+</li>
+<li><p>5 HTML标签不区分大小写,但是建议小写</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="标签学习"><a href="#标签学习" class="headerlink" title="标签学习"></a>标签学习</h2><ul>
+<li><p>1、<strong>文件标签</strong></p>
+<ul>
+<li>html：标识HTML文档的根标签</li>
+<li>head：头标签。用于指定HTML的一些属性，可以引入外部资源</li>
+<li>title：定义标题的标签</li>
+<li>body：体标签</li>
+</ul>
+</li>
+<li><p><strong>2、文本标签</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">注释<span class="comment">&lt;!--注释--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span> to <span class="tag">&lt;<span class="name">h6</span>&gt;</span>:标题标签</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span>:段落标签</span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span>换行，自闭合</span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span>:水平线，自闭合 与Markdown一致</span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>字体加粗<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span>&gt;</span>斜体标签<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">&lt;!-- 相对路径 以“./目录” 表示当前目录--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 以“../” 表示上一级目录--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+</li>
+<li><p><strong>3、图片标签</strong></p>
+<ul>
+<li><code>&lt;img src=&quot;路径&quot;&gt;</code> 与Markdown语法一致</li>
+</ul>
+</li>
+<li><p><strong>4、列表标签</strong></p>
+<ul>
+<li><p>有序列表 order list  <code>&lt;ol&gt;</code></p>
+<ul>
+<li><pre><code class="html"><span class="tag">&lt;<span class="name">ol</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第一项<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第二项<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第三项<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>第四项<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">ol</span>&gt;</span>
+<span class="comment"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">- 无序列表unorder list &#96;&#96;&lt;ul&gt;&#96;&#96;</span><br><span class="line"></span><br><span class="line">  &#96;&#96;&#96;html</span><br><span class="line">  &lt;ul type&#x3D;&quot;disc&quot;&gt;</span><br><span class="line">      &lt;li&gt;第一项&lt;&#x2F;li&gt;</span><br><span class="line">      &lt;li&gt;第二项&lt;&#x2F;li&gt;</span><br><span class="line">      &lt;li&gt;第三项&lt;&#x2F;li&gt;</span><br><span class="line">      &lt;li&gt;第四项&lt;&#x2F;li&gt;</span><br><span class="line">  &lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure></span>
+
+
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>5、链接标签</strong></p>
+<ul>
+<li><pre><code>&lt;a href=&quot;https://www.baidu.com&quot;&gt;点我&lt;/a&gt; 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &lt;a herf&#x3D;&quot;https:&#x2F;&#x2F;www.baidu.com&quot;&gt;点我&lt;&#x2F;a&gt; &lt;!--与Markdown一致--&gt;</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+&lt;a href=&quot;https://www.baidu.com&quot; target=&quot;_self&quot;&gt;点我&lt;/a&gt; 
+&lt;!-- 默认 --&gt;        
+&lt;a href=&quot;https://www.baidu.com&quot; target=&quot;_blank&quot;&gt;点我&lt;/a&gt; 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+&lt;a href=&quot;mailto:1679190840@qq.com&quot;&gt;测试邮件&lt;/a&gt;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+&lt;!--a标签嵌套图片--&gt;
+&lt;a href=&quot;https://www.baidu.com&quot;&gt;&lt;img src=&quot;D:\图片\爱壁纸UWP\视觉\视觉 - 1.jpg&quot;  height=&quot;100&quot; width=&quot;100&quot;/&gt;&lt;/a&gt;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- **6、表格标签**</span><br><span class="line"></span><br><span class="line">  -  table:定义表格</span><br><span class="line">  </span><br><span class="line">  - tr：定义行</span><br><span class="line">  </span><br><span class="line">  - td：定义单元格</span><br><span class="line">  </span><br><span class="line">  - th：定义表头单元格</span><br><span class="line">  </span><br><span class="line">  - &#96;&#96;&#96;html</span><br><span class="line">    &lt;table border&#x3D;&quot;1&quot; width&#x3D;&quot;50%&quot; cellpadding&#x3D;&quot;0&quot; cellspacing&#x3D;&quot;0&quot;&gt;</span><br><span class="line">    			&lt;tr&gt;</span><br><span class="line">    				&lt;td&gt;编号&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;姓名&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;成绩&lt;&#x2F;td&gt;</span><br><span class="line">    			&lt;&#x2F;tr&gt;</span><br><span class="line">    			</span><br><span class="line">    			&lt;tr&gt;</span><br><span class="line">    				&lt;td&gt;1&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;test1&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;99&lt;&#x2F;td&gt;</span><br><span class="line">    			&lt;&#x2F;tr&gt;</span><br><span class="line">    			</span><br><span class="line">    			&lt;tr&gt;</span><br><span class="line">    				&lt;td&gt;2&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;test2&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;88&lt;&#x2F;td&gt;</span><br><span class="line">    			&lt;&#x2F;tr&gt;</span><br><span class="line">    			&lt;tr&gt;</span><br><span class="line">    				&lt;td&gt;3&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;test3&lt;&#x2F;td&gt;</span><br><span class="line">    				&lt;td&gt;77&lt;&#x2F;td&gt;</span><br><span class="line">    			&lt;&#x2F;tr&gt;</span><br><span class="line">    			</span><br><span class="line">    			</span><br><span class="line">    		&lt;&#x2F;table&gt;</span><br></pre></td></tr></table></figure></code></pre></li>
+<li><p>width ：宽度</p>
+</li>
+<li><p>boder：边框</p>
+</li>
+<li><p>cellpadding ：内容与单元格空隙</p>
+</li>
+<li><p>cellspacing：单元格间的空隙</p>
+</li>
+<li><p>bgcolor：背景颜色</p>
+</li>
+<li><p>align：对齐方式</p>
+</li>
+<li><p>caption：表格信息</p>
+</li>
+<li><p>thead：表示表头</p>
+</li>
+<li><p>tbody：表示表体</p>
+</li>
+<li><p>tfoot：表示表尾</p>
+</li>
+<li><p>rospan:占两行</p>
+</li>
+<li><p>cospan：占两列</p>
+</li>
+</ul>
+</li>
+<li><p><strong>7、语义标签</strong></p>
+<ul>
+<li><pre><code class="html"><span class="tag">&lt;<span class="name">header</span>&gt;</span><span class="tag">&lt;/<span class="name">header</span>&gt;</span>
+<span class="tag">&lt;<span class="name">footer</span>&gt;</span><span class="tag">&lt;/<span class="name">footer</span>&gt;</span>
+<span class="comment"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">  - </span><br><span class="line">  </span><br><span class="line">- **8、div和span标签**</span><br><span class="line"></span><br><span class="line">  - &#96;&#96;&#96;html</span><br><span class="line">    &lt;span&gt;测试Span&lt;&#x2F;span&gt;&lt;!-- 起包裹作用，没有任何效果，和CSS结合，默认一行 ，行级标签--&gt;</span><br><span class="line">    		</span><br><span class="line">    &lt;div&gt;测试div&lt;&#x2F;div&gt;&lt;!-- 同样没有任何样式，占满一行，块级标签 --&gt;</span><br></pre></td></tr></table></figure></span></code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>9、表单标签</strong></p>
+<ul>
+<li><p>用于采集用户输入数据 </p>
+</li>
+<li><p>实用的标签<code>form</code></p>
+</li>
+<li><p>````html</p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表单标签</title>
+    <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="咕哒子的博客" type="application/atom+xml">
+</head>
+    <body>
+        <!-- form标签用于定义表单的标签 -->
+        <form action="#" method="get">
+            用户名：<input name="UserName"><br>
+            密码：<input name="Password"><br>
+            <input type="submit" value="登录">
+        </form>
+
+<pre><code>&lt;/body&gt;</code></pre></body></html>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    - 属性：action：指定提交数据的URL</span><br><span class="line"></span><br><span class="line">    - 属性： method：指定提交的方式</span><br><span class="line"></span><br><span class="line">      - GET 会在地址栏中显示</span><br><span class="line"></span><br><span class="line">        GET 从指定的资源请求数据</span><br><span class="line"></span><br><span class="line">        GET 请求可被缓存</span><br><span class="line"></span><br><span class="line">        GET 请求保留在浏览器历史记录中</span><br><span class="line"></span><br><span class="line">        GET 请求可被收藏为书签</span><br><span class="line"></span><br><span class="line">        GET 请求不应在处理敏感数据时使用</span><br><span class="line"></span><br><span class="line">        GET 请求有长度限制</span><br><span class="line"></span><br><span class="line">        GET 请求只应当用于取回数据</span><br><span class="line"></span><br><span class="line">      - POST 不会再地址栏中显示，会分装在请求体中</span><br><span class="line"></span><br><span class="line">        POST 向指定的资源提交要被处理的数据</span><br><span class="line"></span><br><span class="line">        POST 请求不会被缓存</span><br><span class="line"></span><br><span class="line">        POST 请求不会保留在浏览器历史记录中</span><br><span class="line"></span><br><span class="line">        POST 不能被收藏为书签</span><br><span class="line"></span><br><span class="line">        POST 请求对数据长度没有要求</span><br><span class="line"></span><br><span class="line">  - 表单数据要被提交必须指定name属性</span><br><span class="line"></span><br><span class="line">  - **input标签**</span><br><span class="line"></span><br><span class="line">    1. 可以通过&#96;&#96;type&#96;&#96;属性改变样式</span><br><span class="line">       - **text** ：placeholder&#x3D;&quot;请输入用户名&quot; 提示信息</span><br><span class="line">       - **password**</span><br><span class="line">       - **radio**：单选框 ，多个单选框要想实现单选&#96;&#96;name&#96;&#96;值必须一致,需要给每个单选框设置value设置值</span><br><span class="line">       - **checkbox**：复选框 &#96;&#96;checked&#x3D;&quot;checked&quot;&#96;&#96;默认选中</span><br><span class="line">       - &#96;&#96;&lt;lable&gt;&#96;&#96;标签for属性和id属性绑定，有点击效果</span><br><span class="line">       - **file**：文件选择框</span><br><span class="line">       - **hidden**：隐藏的数据</span><br><span class="line">       - **button**：一个按钮，</span><br><span class="line">       - **image**：图片提交按钮</span><br><span class="line">       - **data**：日期</span><br><span class="line">       - **email**：会做正则校验</span><br><span class="line"></span><br><span class="line">- **select标签**：下拉标签 注意必须设置name属性才能被提交</span><br><span class="line"></span><br><span class="line">  - 子元素：&#96;&#96;&lt;option&gt;&lt;&#x2F;option&gt;&#96;&#96;</span><br><span class="line"></span><br><span class="line">- **testarea标签**：文本域</span><br><span class="line"></span><br><span class="line">  - cols:指定列数，每一行多少字符</span><br><span class="line">  - rows：指定行数</span><br><span class="line"></span><br><span class="line">**实例**</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;html</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;表单标签&lt;&#x2F;title&gt;</span><br><span class="line">	&lt;&#x2F;head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;!-- form标签用于定义表单的标签 --&gt;</span><br><span class="line">		&lt;form action&#x3D;&quot;#&quot; method&#x3D;&quot;get&quot;&gt;</span><br><span class="line">			&lt;label for&#x3D;&quot;username&quot;&gt;用户名&lt;&#x2F;label&gt;:&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;UserName&quot; id&#x3D;&quot;username&quot; placeholder&#x3D;&quot;请输入用户名&quot; &#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">			&lt;label for&#x3D;&quot;password&quot;&gt;密码&lt;&#x2F;label&gt;:&lt;input type&#x3D;&quot;password&quot; name&#x3D;&quot;Password&quot; id&#x3D;&quot;password&quot; &#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">			&lt;label&gt;性别&lt;&#x2F;label&gt;:&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;gender&quot; value&#x3D;&quot;male&quot; &#x2F;&gt; 男</span><br><span class="line">			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;gender&quot; value&#x3D;&quot;female&quot; &#x2F;&gt; 女</span><br><span class="line">			&lt;br &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">			&lt;!-- 复选框 --&gt;</span><br><span class="line">			爱好:&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;movie&quot; checked&#x3D;&quot;checked&quot; &#x2F;&gt; 看电影 &lt;br &#x2F;&gt;</span><br><span class="line">			爱好:&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;game&quot; &#x2F;&gt; 玩游戏 &lt;br &#x2F;&gt;</span><br><span class="line">			爱好:&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;java&quot; &#x2F;&gt; 学java &lt;br &#x2F;&gt;</span><br><span class="line">			&lt;br &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">			选择图片:&lt;input type&#x3D;&quot;file&quot; &#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line"></span><br><span class="line">			隐藏域：&lt;input type&#x3D;&quot;hidden&quot; id&#x3D;&quot;hidden&quot; &#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">			</span><br><span class="line">			生日：&lt;input type&#x3D;&quot;date&quot; &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			生日：&lt;input type&#x3D;&quot;datetime&quot; &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			邮箱：&lt;input type&#x3D;&quot;email&quot; &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			数字:&lt;input type&#x3D;&quot;number&quot; &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">			省份：&lt;select name&#x3D;&quot;provience&quot;&gt;</span><br><span class="line">					&lt;option&gt;北京&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option&gt;上海&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option&gt;江西&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option&gt;山东&lt;&#x2F;option&gt;</span><br><span class="line">					&lt;option&gt;福建&lt;&#x2F;option&gt;</span><br><span class="line">			&lt;&#x2F;select&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			</span><br><span class="line">			自我描述:&lt;textarea cols&#x3D;&quot;20&quot; rows&#x3D;&quot;5&quot; name&#x3D;&quot;description&quot;&gt;&lt;&#x2F;textarea&gt;</span><br><span class="line">			&lt;br &#x2F;&gt;</span><br><span class="line">			&lt;input type&#x3D;&quot;button&quot; &#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">			&lt;input type&#x3D;&quot;image&quot; src&#x3D;&quot;D:\图片\爱壁纸UWP\艺术\艺术 - 2.jpg&quot; width&#x3D;&quot;50&quot; &#x2F;&gt;&lt;br &#x2F;&gt;</span><br><span class="line">			&lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;登录&quot; &#x2F;&gt;</span><br><span class="line">		&lt;&#x2F;form&gt;</span><br><span class="line"></span><br><span class="line">	&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-02-26T10:54:07.884Z" itemprop="dateUpdated">2020-02-26 18:54:07</time>
+</span><br>
+
+
+        
+        哈！你能记得你吃过多少块面包吗？
+        
+    </div>
+    
+    <footer>
+        <a href="https://windowsxp002.github.io">
+            <img src="/img/%E5%A4%B4%E5%83%8F.jpg" alt="咕哒子">
+            咕哒子
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《Html学习笔记》 — 咕哒子的博客&pic=https://windowsxp002.github.io/img/头像.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《Html学习笔记》 — 咕哒子的博客&source=咕哒子的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Html学习笔记》 — 咕哒子的博客&url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&via=https://windowsxp002.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">CSS学习笔记</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/01/23/wsl%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">wsl遇到的坑</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        3Q~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>咕哒子 &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《Html学习笔记》 — 咕哒子的博客&pic=https://windowsxp002.github.io/img/头像.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《Html学习笔记》 — 咕哒子的博客&source=咕哒子的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Html学习笔记》 — 咕哒子的博客&url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&via=https://windowsxp002.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://windowsxp002.github.io/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuUlEQVR42u3aQY4iMRAEwPn/p3elPc2lIbPKRqwUfUIMGIdHalen6+cnvv78u57e/329/tbvdzavD194eHh4o6k/Xa8nmnym/d1k+ZI54+Hh4d3mvd4Mkht0/vnZCO0c8PDw8L6BNyud85HzbQMPDw/vf+Elt+lZlNCW9Xh4eHjfwEuG3kQDeXyQbEhXshY8PDy8mNcegH3D64vne3h4eHiLU/X22kQY7TjRfPDw8PAu8F4HqbMQNnknb9vaHIbh4eHh3ePlmBmyiFxH76+Kbzw8PLwR79RBfjtOu0UNtxY8PDy8o7z24b9ttJoFEMPQYdb7gIeHh3eIN7sp5yPnG8wq8sDDw8P7CC/fEpKlyY+1Novy+Fc8PDy8j/PabWBffCftCEUOjYeHh3eBN7t9z5ajLazbwv2RjYeHh3eUl3+tDX/zZZpFIVEhjoeHh3eZl5TXbQxRTKWMa6NHAjw8PLwP8vIn+rwZKy/T89DkzRaCh4eHd4GXtzq1P7NfmhkYDw8P7zO8/Egpj2vzzaYNNZJFfPwf4uHh4a15+c16fxNvj6+Sub0ZBw8PD+8CL5nEpiVrE17MjsHelNR4eHh4h3j5oVQe0eaTy7ecpLAuKnc8PDy8ES8PC9rtoW6QGn3+zRLj4eHhXeDNDpZmjVBFcFCW+8NjMDw8PLw1r226an84KaY3h20Hyms8PDy8mLc5BmtL4bydq97TnpYGDw8P7zLvcIU+CiNmV/SUgIeHh7fm3WuxyivbdsOoQ1s8PDy8o7xT7QWzePfsaBe7J/Dw8PDKyrMNVdvtJ1/E2YEcHh4e3j1eGyK0UznVRtBuIXh4eHjfwGvD31ljQVtw1/E1Hh4e3kd4CSmPa9syuo2A8fDw8G7zkvI3Z+QNB+2S1S0IeHh4eBd4s5amvIBuFyVvSkgWCw8PD+8o7y9YiOQpJ+JeGAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

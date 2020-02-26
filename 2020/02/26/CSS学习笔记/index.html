@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>CSS学习笔记 | 咕哒子的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="CSS,学习笔记">
+    <meta name="description" content="CSS学习笔记概念层叠样式表：cascading Style Sheets, 层叠：多个样式可以作用在一个HTML元素上，同时生效 html与CSS结合方式 内联样式 在标签内使用style属性指定CSS代码；由键值对构成，中间用分号隔开；没有实现样式分离，不建议使用  内部样式 在head中定义style标签，style标签中的内容就是CSS代码，只能在当前页面生效 123456&lt;styl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS学习笔记">
+<meta property="og:url" content="https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="咕哒子的博客">
+<meta property="og:description" content="CSS学习笔记概念层叠样式表：cascading Style Sheets, 层叠：多个样式可以作用在一个HTML元素上，同时生效 html与CSS结合方式 内联样式 在标签内使用style属性指定CSS代码；由键值对构成，中间用分号隔开；没有实现样式分离，不建议使用  内部样式 在head中定义style标签，style标签中的内容就是CSS代码，只能在当前页面生效 123456&lt;styl">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-26T10:46:01.000Z">
+<meta property="article:modified_time" content="2020-02-26T10:54:31.676Z">
+<meta property="article:author" content="咕哒子">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="咕哒子的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/%E5%A4%B4%E5%83%8F.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">咕哒子</h5>
+          <a href="mailto:xiaopeng1679@qq.com" title="xiaopeng1679@qq.com" class="mail">xiaopeng1679@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Windowsxp002" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">CSS学习笔记</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">CSS学习笔记</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-02-26T10:46:01.000Z" itemprop="datePublished" class="page-time">
+  2020-02-26
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS学习笔记"><span class="post-toc-number">1.</span> <span class="post-toc-text">CSS学习笔记</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概念"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">概念</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#html与CSS结合方式"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">html与CSS结合方式</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本语法"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">基本语法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#选择器种类"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">选择器种类</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CSS属性"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">CSS属性</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-CSS学习笔记"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">CSS学习笔记</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-02-26 18:46:01" datetime="2020-02-26T10:46:01.000Z"  itemprop="datePublished">2020-02-26</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="CSS学习笔记"><a href="#CSS学习笔记" class="headerlink" title="CSS学习笔记"></a>CSS学习笔记</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>层叠样式表：cascading Style Sheets,</p>
+<p>层叠：多个样式可以作用在一个HTML元素上，同时生效</p>
+<h3 id="html与CSS结合方式"><a href="#html与CSS结合方式" class="headerlink" title="html与CSS结合方式"></a>html与CSS结合方式</h3><ul>
+<li><p><strong>内联样式</strong></p>
+<p>在标签内使用style属性指定CSS代码；由键值对构成，中间用分号隔开；没有实现样式分离，不建议使用</p>
+</li>
+<li><p><strong>内部样式</strong></p>
+<p>在head中定义style标签，style标签中的内容就是CSS代码，只能在当前页面生效</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="xml">			div&#123;<span class="comment">&lt;!-- 注意吃div不是标签--&gt;</span></span></span><br><span class="line">				color: blue;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p><strong>外联样式</strong></p>
+<p>将CSS代码抽取到外部文件中去</p>
+<ul>
+<li><p>1、定义CSS文件</p>
+</li>
+<li><p>2、在head标签内定义link标签，引入外部CSS资源文件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"./CSS/a.css"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">	<span class="attribute">color</span>: brown</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>或者也可以通过以下方式引入</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">	<span class="keyword">@import</span> url(<span class="string">"CSS/a.css"</span>);	</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<p> <strong><em>注意事项</em></strong>：三种方式作用范围越来越大</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><ul>
+<li><p>格式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">选择器1&#123;</span><br><span class="line">	属性名：属性值；</span><br><span class="line">	属性名：属性值；</span><br><span class="line">	属性名：属性值；</span><br><span class="line">	···</span><br><span class="line">&#125;</span><br><span class="line">选择器2&#123;</span><br><span class="line">	属性名：属性值；</span><br><span class="line">	属性名：属性值；</span><br><span class="line">	属性名：属性值；</span><br><span class="line">	···</span><br><span class="line">&#125;</span><br><span class="line">···</span><br></pre></td></tr></table></figure>
+
+<p>选择器：筛选具有相似特征的元素；每一对的属性需要使用分号隔开，最后一对属性可以不加分号</p>
+</li>
+</ul>
+<h2 id="选择器种类"><a href="#选择器种类" class="headerlink" title="选择器种类"></a>选择器种类</h2><ul>
+<li><p><strong>基本选择器</strong></p>
+<ul>
+<li><p><em>id选择器</em>：选择具体的ID属性值<code>#id</code></p>
+</li>
+<li><p><em>元素选择器</em>：选择具有相同标签名称的元素，低于id要选择器</p>
+</li>
+<li><p><em>类选择器</em>：选择具有相同Class属性值的元素，语法<code>.class属性值（）</code>，比元素选择器优先级高</p>
+<p><strong><em>选择器优先级：id&gt;类&gt;元素</em></strong></p>
+</li>
+</ul>
+</li>
+<li><p><strong>拓展选择器</strong></p>
+<ul>
+<li><p><code>*</code>选择所有元素；<code>*{}</code></p>
+</li>
+<li><p>并集选择器：选择多个只选择器<code>选择器1，选择器2{}</code></p>
+</li>
+<li><p>子选择器：<code>选择器1 选择器2{}</code>筛选选择器1下的选择器2</p>
+</li>
+<li><p>父选择器：<code>选择器1&gt;选择器2{}</code>筛选选择器2的父选择器1</p>
+</li>
+<li><p>属性选择器：选择元素名称，属性名= 属性值的元素<code>元素名称[属性名=&quot;属性值&quot;]{}</code></p>
+</li>
+<li><p>伪类选择器：选择一类元素具有的状态<code>元素：状态{}</code></p>
+<p>以超链接为例 </p>
+<ul>
+<li>link：初始化的状态</li>
+<li>visited：被访问过的状态</li>
+<li>active：正在访问的状态</li>
+<li>hover：鼠标悬浮状态</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="selector-tag">DOCTYPE</span> <span class="selector-tag">html</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">html</span>&gt;</span><br><span class="line">	&lt;<span class="selector-tag">head</span>&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;测试CSS&lt;/title&gt;</span><br><span class="line">		&lt;!<span class="selector-tag">--</span> 测试内部样式 <span class="selector-tag">--</span>&gt;</span><br><span class="line">		&lt;!-- &lt;link rel="stylesheet" href="./CSS/a.css" /&gt; --&gt;</span><br><span class="line">		&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line">			<span class="selector-id">#div1</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: blueviolet;</span><br><span class="line">				<span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="selector-tag">div</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: <span class="number">#7FFF00</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="selector-class">.cla</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: fuchsia;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			</span><br><span class="line">			<span class="comment">/* 子选择器 */</span></span><br><span class="line">			<span class="selector-tag">div</span> <span class="selector-tag">p</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: firebrick;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			<span class="comment">/* 父选择器 */</span></span><br><span class="line">			<span class="selector-tag">div</span> &gt; <span class="selector-tag">p</span>&#123;</span><br><span class="line">				<span class="attribute">border</span>: <span class="number">0.0625rem</span> solid;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			<span class="selector-tag">input</span><span class="selector-attr">[type=<span class="string">"text"</span>]</span>&#123;</span><br><span class="line">				<span class="attribute">border</span>: <span class="number">0.0625rem</span> solid;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">/* 伪选择器 */</span></span><br><span class="line">			<span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: pink;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: darkcyan;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: black;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="selector-tag">a</span><span class="selector-pseudo">:active</span>&#123;</span><br><span class="line">				<span class="attribute">color</span>: blueviolet;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;<span class="selector-tag">body</span>&gt;</span><br><span class="line">		&lt;!<span class="selector-tag">--</span> &lt;!<span class="selector-tag">--</span> 测试内联样式 </span><br><span class="line">		&lt;div style="color: aqua;"&gt;hello CSS!&lt;/div&gt; --&gt;</span><br><span class="line">	</span><br><span class="line">		&lt;div&gt;Hello&lt;/div&gt;</span><br><span class="line">		&lt;p&gt;呵呵&lt;/p&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;div id="div1"&gt;DIV1测试&lt;/div&gt;&lt;br /&gt;</span><br><span class="line">		&lt;div&gt;DIV2&lt;/div&gt;&lt;br /&gt;</span><br><span class="line"></span><br><span class="line">		&lt;p class="cla"&gt; 测试&lt;/p&gt;&lt;br /&gt;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		&lt;!<span class="selector-tag">--</span> 子选择器 <span class="selector-tag">--</span>&gt;</span><br><span class="line">		&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">			&lt;p&gt;锄禾日当午&lt;/p&gt;&lt;br /&gt;</span><br><span class="line">			&lt;p&gt;汗滴禾下土&lt;/p&gt;&lt;br /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		</span><br><span class="line">		测试&lt;input type="text" /&gt;&lt;br /&gt;&lt;br /&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;a href="https://www.baidu.com"&gt;百度&lt;/a&gt;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="CSS属性"><a href="#CSS属性" class="headerlink" title="CSS属性"></a>CSS属性</h2><p><strong>常用属性</strong></p>
+<ul>
+<li><p><strong>字体文本</strong></p>
+<ul>
+<li><em>font-size</em></li>
+<li><em>color:</em>文版颜色</li>
+<li><em>test-align</em>:对齐方式</li>
+<li><em>line-heignt:</em>行高</li>
+</ul>
+</li>
+<li><p><strong>背景</strong></p>
+<ul>
+<li><em>background：</em>复合属性</li>
+</ul>
+</li>
+<li><p><strong>边框</strong></p>
+<ul>
+<li><em>border：</em>设置边框，复合属性</li>
+</ul>
+</li>
+<li><p><strong>尺寸</strong></p>
+<ul>
+<li><em>width：</em>宽</li>
+<li><em>height</em>：高</li>
+</ul>
+</li>
+<li><p><strong>盒子模型</strong></p>
+<p>一个元素一个盒子</p>
+<ul>
+<li>外边距：margin </li>
+<li>内边距：padding ，默认情况下内边距会影响整个盒子的大小，可以设置属性让width和height不变<code>box-sizing:border-box</code></li>
+<li>float:浮动属性<ul>
+<li>left</li>
+<li>right</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>例子</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">			/* p&#123;</span><br><span class="line">				color: orangered;</span><br><span class="line"><span class="css">				<span class="selector-tag">font-size</span>: 1<span class="selector-class">.875rem</span>;</span></span><br><span class="line">				text-align: center;</span><br><span class="line">				line-height: 5;</span><br><span class="line"><span class="css">				<span class="selector-tag">border-top</span>: <span class="selector-id">#FF4500</span> 0<span class="selector-class">.0625rem</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">				<span class="selector-tag">border-left</span>: <span class="selector-tag">orange</span> 0<span class="selector-class">.0625rem</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">				<span class="selector-tag">border-right</span>: <span class="selector-tag">black</span> 0<span class="selector-class">.0625rem</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">				<span class="selector-tag">border-bottom</span>: <span class="selector-tag">blue</span> 0<span class="selector-class">.0625rem</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">			div&#123;</span><br><span class="line"><span class="css">				<span class="selector-tag">border</span>: <span class="selector-id">#000000</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">				<span class="selector-tag">height</span>: 1<span class="selector-class">.875rem</span>;</span></span><br><span class="line"><span class="css">				<span class="selector-tag">width</span>: 1<span class="selector-class">.875rem</span>;</span></span><br><span class="line">			&#125;</span><br><span class="line">			body&#123;</span><br><span class="line"><span class="css">				<span class="selector-tag">border</span>: <span class="selector-id">#000000</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line">				background: blanchedalmond center;</span><br><span class="line">			&#125; */</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">			div &#123;</span><br><span class="line">				border: 1px solid red;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="css">			<span class="selector-class">.div1</span> &#123;</span></span><br><span class="line">				width: 200px;</span><br><span class="line">				height: 200px;</span><br><span class="line">				padding: 50px;</span><br><span class="line">				box-sizing: border-box;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="css">			<span class="selector-class">.div2</span> &#123;</span></span><br><span class="line">				width: 100PX;</span><br><span class="line">				height: 100px;</span><br><span class="line"><span class="css">				<span class="comment">/* margin: 3.125rem; */</span></span></span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="css">			<span class="selector-class">.div3</span> &#123;</span></span><br><span class="line">				float: left;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="css">			<span class="selector-class">.div4</span> &#123;</span></span><br><span class="line">				float: left;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"><span class="css">			<span class="selector-class">.div5</span> &#123;</span></span><br><span class="line">				float: left;</span><br><span class="line">			&#125;</span><br><span class="line">		<span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- &lt;p&gt;测试&lt;/p&gt;</span></span><br><span class="line"><span class="comment">		&lt;div&gt;</span></span><br><span class="line"><span class="comment">			</span></span><br><span class="line"><span class="comment">		&lt;/div&gt; --&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div4"</span>&gt;</span>bbb<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div5"</span>&gt;</span>ccc<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-02-26T10:54:31.676Z" itemprop="dateUpdated">2020-02-26 18:54:31</time>
+</span><br>
+
+
+        
+        哈！你能记得你吃过多少块面包吗？
+        
+    </div>
+    
+    <footer>
+        <a href="https://windowsxp002.github.io">
+            <img src="/img/%E5%A4%B4%E5%83%8F.jpg" alt="咕哒子">
+            咕哒子
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《CSS学习笔记》 — 咕哒子的博客&pic=https://windowsxp002.github.io/img/头像.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《CSS学习笔记》 — 咕哒子的博客&source=咕哒子的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CSS学习笔记》 — 咕哒子的博客&url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&via=https://windowsxp002.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/02/26/Html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Html学习笔记</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        3Q~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>咕哒子 &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《CSS学习笔记》 — 咕哒子的博客&pic=https://windowsxp002.github.io/img/头像.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=《CSS学习笔记》 — 咕哒子的博客&source=咕哒子的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CSS学习笔记》 — 咕哒子的博客&url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&via=https://windowsxp002.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://windowsxp002.github.io/2020/02/26/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACs0lEQVR42u3a204cMRAEUP7/p4mUp0TAUNVtZ4l05mm1lxkfI9mmut/e4uv99/Xn64/XV59+dbePn7bvH7vw8PDwRkNPBv3MPvvEr6a1vQMeHh7ePV6yGSTLd749PC/9z08sphsPDw/vpbznw+6GkdwZDw8P73/ktfj88N0e6/Hw8PB+Aq8NZ2eY9g7tePDw8PD+DW9WAHvt6+v1PTw8PLzRQba98mW9PZQPx4OHh4d3gbdpaZoh8+JW3rD1zcjx8PDwLvBmDQHP8e6mYWszWVGYi4eHh3eBN0s18taB2eq9Cizw8PDwDvH2DQHtBJ0NPr4ZIR4eHt4FXgtrw9nnO+fDTb5Z/CXx8PDwDvFmbU/J61mAm4cRhxsL8PDw8Ba8fYiwWdbroPZUTxkeHh7eaBtog91k6W8LWvsSGh4eHt4NXhIuJIzNanxqEuv/CfDw8PDWvNmynse1s+e2B/2/fouHh4d3gTdccEcH4rzQ1RbnvhkzHh4e3lFeuyWcWqzzI/Ws5QsPDw/vHm+z+G5KYpuGgyESDw8P7yivPTq3Q2njjHwjifB4eHh4R3l5CWrTrpo3IuTFsGi7wsPDw7vAy0tZLbgNKdqC2epIjYeHh3eUly/f+5hgH2esAlw8PDy8o7w2aGgPx6cCi+iJeHh4eBd4+ZUcgvNSWXufNkDBw8PDu8dLwohZOJuUsjalryKrxsPDw7vA27RSbZb4U9tVsZvh4eHhLXjv5XWqANa2W+XfwcPDw7vN2yy+z8ffNpxtJ6Ut2uHh4eGd5e3D2VlY0DZ7JYHFJ7/Fw8PDu8abNVfN3s8LYwfaufDw8PB+AK8NBRLMxSnAw8PDeymvPc4mU9CW3NoDPR4eHt49XhJGzMLcZMr2uWvRGYGHh4e35s0KUW2TQX4snrUgHKvv4eHh4T3xfgHXPKZLoMGctQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
